@@ -1,0 +1,5 @@
+package com.capstone.web;
+
+public class EventsController {
+
+}
