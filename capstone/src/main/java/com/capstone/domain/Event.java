@@ -1,26 +1,26 @@
 package com.capstone.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="EVENTS")
 public class Event {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	long id;
-
+	
+	@Column(name="EVENT_CODE")
 	String code;
-
+	
 	String title;
-
+	
 	String description;
-
-	public Event() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public Event(long id, String code, String title, String description) {
-		super();
-		this.id = id;
-		this.code = code;
-		this.title = title;
-		this.description = description;
-	}
 
 	public long getId() {
 		return id;
@@ -53,5 +53,6 @@ public class Event {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
+	
+	
 }

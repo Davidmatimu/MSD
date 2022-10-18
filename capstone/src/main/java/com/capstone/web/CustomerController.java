@@ -3,8 +3,8 @@ package com.capstone.web;
 import java.net.URI;
 import java.util.Iterator;
 import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -24,6 +24,7 @@ import com.capstone.repository.CustomerRepository;
 @RestController
 @RequestMapping("/customers")
 public class CustomerController {
+	
 	@Autowired
 	CustomerRepository repo;
 
