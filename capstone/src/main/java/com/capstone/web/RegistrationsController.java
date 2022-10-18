@@ -9,14 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capstone.model.Registration;
+import com.capstone.domain.Registration;
 
 @RestController
 @RequestMapping("/registrations")
 public class RegistrationsController {
 	ArrayList<Registration> registrationList = new ArrayList<Registration>();
 
-	@SuppressWarnings("deprecation")
 	public RegistrationsController() {
 		Registration r1 = new Registration(1L, "1", "2", new Date(), "please email me the event details");
 		Registration r2 = new Registration(2L, "2", "2", new Date(), "send transportation and hotel booking");

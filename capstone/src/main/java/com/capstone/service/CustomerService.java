@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import org.springframework.stereotype.Component;
 
-import com.capstone.model.Customer;
+import com.capstone.domain.Customer;
 
 @Component
 public class CustomerService {
@@ -15,28 +15,13 @@ public class CustomerService {
 	private static Integer customerCount = 0;
 
 	static {
-		customers.add(new Customer(++customerCount, "Adam", "dog"));
-		customers.add(new Customer(++customerCount, "Eve", "cat"));
+		customers.add(new Customer(++customerCount, "Adam", "dog", null));
+		customers.add(new Customer(++customerCount, "Eve", "cat", null));
 	}
 
 	public List<Customer> findAll() {
 
 		return customers;
-	}
-
-	public Customer getUserById(int id) {
-
-		Predicate<? super Customer> predicate = Customer -> Customer.getId().equals(id);
-
-		return customers.stream().filter(predicate).findFirst().get();
-	}
-
-	public void deleteUserById(int id) {
-
-		Predicate<? super Customer> predicate = Customer -> Customer.getId().equals(id);
-		
-		customers.removeIf(predicate);
-
 	}
 
 	public Customer save(Customer customer) {
