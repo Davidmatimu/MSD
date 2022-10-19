@@ -1,0 +1,5 @@
+package com.webage.jwt;
+
+public class JWTHelper {
+
+}
