@@ -5,4 +5,7 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="com.capstone.web.CustomerController"/>
     <fullyQualifiedTypeName name="com.capstone.repository.CustomerRepository"/>
+    <fullyQualifiedTypeName name="com.capstone.jwt.JWTUtil"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.capstone.jwt.JWTMockUtil"/>
 </qualifiedTypeNameHistroy>

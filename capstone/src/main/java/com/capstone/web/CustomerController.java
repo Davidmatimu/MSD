@@ -24,7 +24,7 @@ import com.capstone.repository.CustomerRepository;
 @RestController
 @RequestMapping("/customers")
 public class CustomerController {
-	
+
 	@Autowired
 	CustomerRepository repo;
 

@@ -1,0 +1,5 @@
+package com.capstone.jwt;
+
+public interface JWTUtil {
+
+}
