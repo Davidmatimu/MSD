@@ -5,12 +5,12 @@ node {
     
     stage ("Gradle Build - DataService") {
 	
-        sh 'gradle -b capstone/build.gradle clean build'
+        sh 'gradle clean build'
 
     }
     
     stage ("Gradle BootJar-Package - DataService") {
-        sh 'gradle -b capstone/build.gradle bootJar'
+        sh 'gradle bootJar'
     }
     
     stage('User Acceptance Test - DataService') {
